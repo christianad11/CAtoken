@@ -1,0 +1,21 @@
+{
+  "name": "ca_token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "rm -r -f build && truffle test",
+    "launch-devnet": "ganache-cli -a 10 -e 1000 --acctKeys devnetAccs.json",
+    "deploy-devnet": "rm -r -f build && truffle migrate --reset"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1"
+  }
+}
